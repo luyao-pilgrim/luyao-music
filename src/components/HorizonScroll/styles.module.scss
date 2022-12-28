@@ -1,0 +1,27 @@
+.outer {
+    .Wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: smaller;
+        overflow-x: auto;
+        .item{
+            /* width: 100px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // width: 100px;
+            height: 30px;
+            margin: 5px 10px 5px 0;
+            flex-shrink: 0;
+            &.border {
+                border: 1px red solid;
+                border-radius: 5px;
+            }
+        }
+        .item:first-child {
+            margin-left: 5px;
+        }
+    
+    
+    }
+}

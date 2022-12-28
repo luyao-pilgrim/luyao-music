@@ -1,0 +1,50 @@
+.singerListContainer {
+    position: fixed;
+    top: 180px;
+    left: 0;
+    bottom: 0;
+    // overflow: hidden;
+    width: 100%;
+
+    .singerList {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        // overflow: hidden;
+
+        .singerListItem {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            margin: 0 5px;
+            padding: 5px 0;
+            align-items: center;
+            border-bottom: 1px solid;
+
+            .singerImgWrapper {
+                margin-right: 20px;
+
+                img {
+                    border-radius: 3px;
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .singerName {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.enterLoadingWrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}

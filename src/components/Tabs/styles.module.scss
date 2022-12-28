@@ -1,0 +1,31 @@
+.tabs {
+    height: 44px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+
+    .NavLink {
+        font-size: 14px;
+        padding: 2px 0px;
+        color: #e4e4e4;
+        text-decoration: none;
+
+        .tabItem {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &.active {
+            span {
+                padding: 3px 0;
+                font-weight: 700;
+                color: #f1f1f1;
+                border-bottom: 2px solid #f1f1f1;
+            }
+        }
+    }
+
+}
