@@ -3,6 +3,7 @@ import Home from "../pages/Home"
 const Recommend = lazy(() => import("../pages/Recommend"))
 const Singer = lazy(() => import("../pages/Singer"))
 const Rank = lazy(() => import("../pages/Rank"))
+const Album = lazy(() => import("../pages/Album"))
 
 import { Navigate } from "react-router"
 
@@ -23,7 +24,13 @@ const routes = [
         children: [
             {
                 path: "/recommend",
-                element: suspense(<Recommend></Recommend>)
+                element: suspense(<Recommend></Recommend>),
+                children: [
+                    {
+                        path: "/recommend/:id",
+                        element: suspense(<Album></Album>)
+                    }
+                ]
             },
             {
                 path: "/singer",

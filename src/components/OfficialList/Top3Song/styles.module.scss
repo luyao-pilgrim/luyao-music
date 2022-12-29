@@ -1,0 +1,12 @@
+.topList {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    .deco {
+        color: grey;
+        padding: 5px;
+        font-size: x-small;
+    }
+}
